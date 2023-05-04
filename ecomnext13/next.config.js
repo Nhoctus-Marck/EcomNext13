@@ -6,7 +6,11 @@ const nextConfig = {
   env:{
     API_URL:"http://localhost:3000",
     DB_URI: "mongodb://localhost:27017/buyitnow"
+  }, 
+  images:{
+    domains:["http2.mlstatic.com"],
   }
+  
 }
 
 module.exports = nextConfig

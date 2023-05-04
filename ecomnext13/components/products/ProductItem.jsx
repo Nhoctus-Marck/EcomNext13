@@ -10,20 +10,24 @@ const ProductItem = ({product}) => {
         <div className="md:w-1/4 flex p-3">
           <div
             style={{
-              width: "80%",
-              height: "70%",
+              width: "100%",
               position: "relative",
             }}
           >
             <Image
+              style={{
+                position: "relative",
+                aspectRatio:"3/2",
+                objectFit:"contain"
+              }}
               src={
                 product?.images[0]
                   ? product?.images[0].url
                   : "/images/default_product.png"
               }
               alt="product anme"
-              height="240"
-              width="240"
+              height="250"
+              width="250"
             />
           </div>
         </div>

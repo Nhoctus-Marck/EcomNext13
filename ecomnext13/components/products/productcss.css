@@ -1,0 +1,8 @@
+.zoomImg:hover{
+    background-color: rgba(0, 0, 0, 0.473);
+    z-index: 0;
+}
+.ImageMagnify{
+    width:200px;
+    position: relative;
+}

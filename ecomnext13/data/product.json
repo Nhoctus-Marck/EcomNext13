@@ -1,8 +1,66 @@
-{
+[{
     "name": "Smart Tv Noblex Dk32x7000pi Led Hd 32 Android Tv",
     "description": " PANTALLA: - TIPO DE PANTALLA: LED - TIPO DE TV: SMART TV - PULGADAS: 32 - RESOLUCION DE VIDEO: 1366x768 - RELACION DE ASPECTO: 16:9 - CONTRASTE: 3000:1 - BRILLO: 180cd - TIEMPO DE RESPUESTA (ms): 6,5ms - FRECUENCIA DE REFRESCO (hz): 60Hz - NORMA DE VIDEO: Pal-N / Pal-M /NTSC",
     "price":49.999,
     "seller":"El Vendedor",
     "stock":200,
     "category":"Electronict"
+},
+{
+    "name": "Teclado Genius Gamer Scorpion K8 Usb Negro",
+    "description": "TECLADO GENIUS GX SCORPION K8 USB NEGRO SP Teclado profesional para juegos retroiluminado con teclas flotantes El Scorpion K8 es un teclado profesional para juegos con LED retroiluminado que proporciona iluminación multicolor, elevando la atmósfera de juego a un nuevo nivel.",
+    "price":10.545,
+    "seller":"El Vendedor",
+    "stock":100,
+    "category":"Electronict",
+    "images":[
+        {
+            "public_id": "buyitnow/products/uyuityitttujjuu44",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_804066-MLA42514864645_072020-O.webp"
+        }
+    ],
+    "review":[],
+    "rating" : 2
+},
+{
+    "name": "Mouse gamer Logitech G Series Hero G502 kda",
+    "description": "Logitech diseña productos y experiencias que ocupan un lugar cotidiano en la vida de las personas, poniendo foco en la innovación y la calidad. Su objetivo es crear momentos verdaderamente únicos y significativos para sus usuarios. Los mouses Logitech se adaptan a la forma de tu mano para proporcionarte horas de comodidad. Sin necesidad de mover el brazo para deslizar el cursor, tu mano se fatigará menos. Son ideales para cualquier espacio de trabajo y quienes tienen la mesa llena de diversos objetos.",
+    "price":37.108,
+    "seller":"El Vendedor",
+    "stock":1000,
+    "category":"Electronict",
+    "images":[
+        {
+            "public_id": "buyitnow/products/uyunjjjjuu44",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_903817-MLA47947792514_102021-O.webp"
+        }
+    ],
+    "review":[],
+    "rating" : 5
+},
+{
+    "name": "Placa De Video Nvidia Geforce Gtx 1050 Ti Storm X Palit Cts",
+    "description": "PLACA DE VIDEO NVIDIA PALIT 1050 TI STORM X Memory Amount 4096MB Memory Interface 128bit DRAM Type GDDR5 Graphics Clock 1290MHz Boost Clock 1392MHz Memory Clock 7000MHz     CUDA Cores 768    Memory Bandwidth (GB/sec) 112    Microsoft DirectX 12    OpenGL 4.5    Bus Support PCI-E 3.0 x 16    DVI Dual-Link DVI-D    HDMI HDMI 2.0b    DisplayPort YES    Maximum Digital Resolution 4096x2160    Maximum VGA Resolution 2048x1536    Height 2 Slot    Board Size 166mm x 112mm    Graphics Card Power 75W    Recommended System Power 300 W    Accessory Manual    NVIDIA® Pascal    NVIDIA Dynamic Super Resolution [DSR] Technology    NVIDIA Adaptive Vertical Sync    NVIDIA CUDA Technology  NVIDIA PhysX-ready    NVIDIA 3D Vision Ready    NVIDIA Multi-Projection    NVIDIA Ansel    NVIDIA Vulkan API    NVIDIA G-SYNC    NVIDIA GPU Boost 3.0    NVIDIA GameStream Technology",
+    "price":249.999,
+    "seller":"El Vendedor",
+    "stock":0,
+    "category":"Electronict",
+    "images":[
+        {
+            "public_id": "buyitnow/products/uyunjyuiyuobnnn",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_756072-MLA44547105774_012021-O.webp"
+        },
+        {
+            "public_id": "buyitnow/products/uyugdgruiyj4",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_731994-MLA44547119226_012021-O.webp"
+        },
+        {
+            "public_id": "buyitnow/products/uyghgthnnyyuuuuyj4",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_819896-MLA44547120165_012021-O.webp"
+        }
+    ],
+    "review":[],
+    "rating" : 5
 }
+
+]

@@ -4,6 +4,7 @@ import StarRatings from "react-star-ratings";
 import "./productcss.css";
 import ReactImageMagnify from 'react-image-magnify';
 import { useRef } from 'react';
+import BreadCrumbs from '../layouts/BreadCrumbs';
 
 const ProductsDetails = ({product}) => {
 
@@ -16,10 +17,18 @@ const ProductsDetails = ({product}) => {
   const inStock = product?.stock >= 1
   // console.log(product.images[0].url);
   const watchImg300 = product.images[0].url;
+
+  const breadCrumbs = [
+    {name:"Home", url:'/'},
+    {name:`${product?.category}`, url:'/'},
+    {name:`${product?.name?.substring(0,100)}`,
+     url: `/product/${product?._id}`
+    },
+  ]
   return (
     <>
     
-    {/* <BreadCrumbs /> */}
+    <BreadCrumbs breadCrumbs={breadCrumbs} />
     <section className="bg-white py-10">
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-5">

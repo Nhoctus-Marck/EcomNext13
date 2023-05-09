@@ -2,6 +2,7 @@
 
 import React from 'react'
 import ProductItem from './ProductItem';
+import PaginationC from '../layouts/Pagination';
 
 const ListProducts = ({data}) => {
     console.log(data);
@@ -13,6 +14,7 @@ const ListProducts = ({data}) => {
             {data?.products?.map((product) => (
               <ProductItem key={product?._id} product={product} />
             ))}
+            <PaginationC resPerPage={data?.resPerPage} productsCount={data?.filteredProductsCount}/>
           </main>
         </div>
       </div>

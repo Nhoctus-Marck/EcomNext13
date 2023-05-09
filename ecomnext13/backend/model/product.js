@@ -33,9 +33,43 @@ const productSchema = new mongoose.Schema({
                 "Laptosps",
                 "Accesories",
                 "headphones",
-                "Sports"
+                "Sports",
+                "ClotheS",
             ],
             message:"Please select correct category"
+        }
+    },
+    subCategory:{
+        type: String,
+        required:[true,'Please enter product SubCategory'],
+        enum:{
+            values:[
+                "VideoGames",
+                "MotherBoard",
+                "VideoGamesCard",
+                "KeyBoard",
+                "Mause",
+                "Ram",
+                "Screens",
+                "Cameras",
+                "Laptosps",
+                "Accesories",
+                "headphones",
+                "Sports",
+                "Male coats",
+                "Female coats",
+                "Gloves",
+                "Male T-shirts",
+                "Female T-shirts",
+                "Male Footwear",
+                "Female Footwear",
+                "Male Pants",
+                "Female Pants",
+                "Male Underwear",
+                "Female Underwear"
+
+            ],
+            message:"Please select correct Subcategory"
         }
     },
     seller:{

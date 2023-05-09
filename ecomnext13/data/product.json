@@ -61,6 +61,35 @@
     ],
     "review":[],
     "rating" : 5
+},
+{
+    "name": "Remera Lacoste Para Hombre Cuello Redondo Corte Normal Negro",
+    "description": "DETALLES: - Punto de algodón pima. - Cuello redondo. - Corte normal. - Marca de cocodrilo verde bordada en el pecho. - Algodón (100%).",
+    "price":19.500,
+    "seller":"LACOSTE",
+    "stock":450,
+    "category":"Clothes",
+    "subCategory":"Male T-shirts",
+    "images":[
+        {
+            "public_id": "buyitnow/products/rmublatshrtyu",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_814390-MLA52626875426_112022-O.webp"
+        },
+        {
+            "public_id": "buyitnow/products/rmublatshrtyu2",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_793703-MLA51921382342_102022-O.webp"
+        },
+        {
+            "public_id": "buyitnow/products/rmublatshrtyu3",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_968305-MLA51921333626_102022-O.webp"
+        },
+        {
+            "public_id": "buyitnow/products/rmublatshrtyuta",
+            "url":"https://http2.mlstatic.com/D_NQ_NP_622938-MLA51616236797_092022-O.webp"
+        }
+    ],
+    "review":[],
+    "rating" : 5
 }
 
 ]

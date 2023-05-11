@@ -43,7 +43,7 @@ class APIFilters{
             }
         }
 
-        this.query = this.query.find(queryCopy)
+        this.query = this.query.find(output)
         return this
     }
     pagination(resPerPage){

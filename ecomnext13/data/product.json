@@ -20,7 +20,7 @@
         }
     ],
     "review":[],
-    "rating" : 2
+    "ratings" : 2
 },
 {
     "name": "Mouse gamer Logitech G Series Hero G502 kda",
@@ -36,7 +36,7 @@
         }
     ],
     "review":[],
-    "rating" : 5
+    "ratings" : 5
 },
 {
     "name": "Placa De Video Nvidia Geforce Gtx 1050 Ti Storm X Palit Cts",
@@ -60,7 +60,7 @@
         }
     ],
     "review":[],
-    "rating" : 5
+    "ratings" : 5
 },
 {
     "name": "Remera Lacoste Para Hombre Cuello Redondo Corte Normal Negro",
@@ -89,7 +89,7 @@
         }
     ],
     "review":[],
-    "rating" : 5
+    "ratings" : 5
 }
 
 ]

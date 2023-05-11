@@ -35,6 +35,7 @@ const productSchema = new mongoose.Schema({
                 "headphones",
                 "Sports",
                 "ClotheS",
+                "Furnitures",
             ],
             message:"Please select correct category"
         }
@@ -66,7 +67,8 @@ const productSchema = new mongoose.Schema({
                 "Male Pants",
                 "Female Pants",
                 "Male Underwear",
-                "Female Underwear"
+                "Female Underwear",
+                "Desks",
 
             ],
             message:"Please select correct Subcategory"

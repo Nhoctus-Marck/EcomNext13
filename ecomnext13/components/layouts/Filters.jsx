@@ -2,16 +2,38 @@
 
 import React from "react";
 import StarRatings from "react-star-ratings";
+import { useRouter } from 'next/navigation'
 
 const Filters = () => {
+  const router = useRouter()
   let queryParams;
+
+  function handleClick(checkbox){
+    if(typeof window !== "undefined"){
+      queryParams = new URLSearchParams(window.location.search)
+    }
+    const checkboxes = document.getElementsByName(checkbox.name)
+
+    checkboxes.forEach((item) => {
+      if(item !== checkbox) item.checked = false
+    })
+    if(checkbox.checked === false){
+      queryParams.delete(checkbox.name)
+    }else{
+        if(queryParams.has(checkbox.name)){
+          queryParams.set(checkbox.name,checkbox.value)
+        }else{
+          queryParams.append(checkbox.name,checkbox.value)
+        }
+    }
+    const path = window.location.pathname + "?" + queryParams.toString()
+    router.push(path)
+  }
 
   function checkHandler(checkBoxType, checkBoxValue) {
     if (typeof window !== "undefined") {
       queryParams = new URLSearchParams(window.location.search);
-    }
-
-    if (typeof window !== "undefined") {
+    
       const value = queryParams.get(checkBoxType);
       if (checkBoxValue === value) return true;
       return false;
@@ -64,9 +86,10 @@ const Filters = () => {
               <input
                 name="category"
                 type="checkbox"
-                value="Electronics"
+                value="Electronict"
                 className="h-4 w-4"
-                defaultChecked={checkHandler("category", "Electronics")}
+                defaultChecked={checkHandler("category", "Electronict")}
+                onClick={(e)=> handleClick(e.target)}
               />
               <span className="ml-2 text-gray-500"> Electronics </span>
             </label>
@@ -79,6 +102,7 @@ const Filters = () => {
                 value="Laptops"
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Laptops")}
+                onClick={(e)=> handleClick(e.target)}
               />
               <span className="ml-2 text-gray-500"> Laptops </span>
             </label>
@@ -91,6 +115,7 @@ const Filters = () => {
                 value="Toys"
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Toys")}
+                onClick={(e)=> handleClick(e.target)}
               />
               <span className="ml-2 text-gray-500"> Toys </span>
             </label>
@@ -100,11 +125,12 @@ const Filters = () => {
               <input
                 name="category"
                 type="checkbox"
-                value="Office"
+                value="Furnitures"
                 className="h-4 w-4"
-                defaultChecked={checkHandler("category", "Office")}
+                defaultChecked={checkHandler("category", "Furnitures")}
+                onClick={(e)=> handleClick(e.target)}
               />
-              <span className="ml-2 text-gray-500"> Office </span>
+              <span className="ml-2 text-gray-500"> Furnitures </span>
             </label>
           </li>
           <li>
@@ -115,8 +141,22 @@ const Filters = () => {
                 value="Beauty"
                 className="h-4 w-4"
                 defaultChecked={checkHandler("category", "Beauty")}
+                onClick={(e)=> handleClick(e.target)}
               />
               <span className="ml-2 text-gray-500"> Beauty </span>
+            </label>
+          </li>
+          <li>
+            <label className="flex items-center">
+              <input
+                name="category"
+                type="checkbox"
+                value="ClotheS"
+                className="h-4 w-4"
+                defaultChecked={checkHandler("category", "ClotheS")}
+                onClick={(e)=> handleClick(e.target)}
+              />
+              <span className="ml-2 text-gray-500"> Clothes </span>
             </label>
           </li>
         </ul>
@@ -134,6 +174,7 @@ const Filters = () => {
                   value={rating}
                   className="h-4 w-4"
                   defaultChecked={checkHandler("ratings", `${rating}`)}
+                  onClick={(e)=> handleClick(e.target)}
                 />
                 <span className="ml-2 text-gray-500">
                   {" "}

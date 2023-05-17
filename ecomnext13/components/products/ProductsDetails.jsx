@@ -3,10 +3,12 @@ import React from 'react'
 import StarRatings from "react-star-ratings";
 import "./productcss.css";
 import ReactImageMagnify from 'react-image-magnify';
-import { useRef } from 'react';
+import { useRef , useContext} from 'react';
 import BreadCrumbs from '../layouts/BreadCrumbs';
+import CartContext from '@/context/CartContext';
 
 const ProductsDetails = ({product}) => {
+  const {addItemToCart} = useContext(CartContext)
 
   const imgRef = useRef(null)
 
@@ -16,6 +18,16 @@ const ProductsDetails = ({product}) => {
 
   const inStock = product?.stock >= 1
   // console.log(product.images[0].url);
+  const addToCartHandler = () => {
+    addItemToCart({
+      product: product._id,
+      name: product.name,
+      image: product.images[0].url,
+      price: product.price,
+      stock: product.stock,
+      seller: product.seller,
+    })
+  }
   const watchImg300 = product.images[0].url;
 
   const breadCrumbs = [
@@ -114,7 +126,7 @@ const ProductsDetails = ({product}) => {
             </p>
 
             <div className="flex flex-wrap gap-2 mb-5">
-              <button className="px-4 py-2 inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
+              <button onClick={addToCartHandler} disabled={!inStock} className="px-4 py-2 inline-block text-white bg-blue-600 border border-transparent rounded-md hover:bg-blue-700">
                 <i className="fa fa-shopping-cart mr-2"></i>
                 Add to cart
               </button>

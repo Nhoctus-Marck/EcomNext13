@@ -1,3 +1,4 @@
+import { GlobalProvider } from './GlobalProvider'
 import './globals.css'
 import Header from '@/components/layouts/Header'
 
@@ -11,8 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head/>
       <body>
-        <Header/>
-        {children}
+        <GlobalProvider>
+          <Header/>
+          {children}
+        </GlobalProvider>
         </body>
     </html>
   )
